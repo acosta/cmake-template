@@ -1,1 +1,5 @@
+INCLUDE_DIRECTORIES( ${Boost_INCLUDE_DIR} )
+
 ADD_EXECUTABLE( cmake-template main.cpp )
+
+TARGET_LINK_LIBRARIES( cmake-template LINK_PUBLIC ${Boost_LIBRARIES} )
